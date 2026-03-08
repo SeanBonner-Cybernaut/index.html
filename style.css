@@ -82,13 +82,18 @@ body {
   transform: translateY(-2px);
 }
 
+/* Give the title more room*/
+.intro {
+  flex: 2;
+}
 .portrait {
-  width: 300px;
+  width: 240px;
   heigh: auto;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
   object-fit: cover;
+  flex: 1;
 }
 
 .portrait:hover {
@@ -287,6 +292,7 @@ footer ul {
   border-radius: 10px;
   object-fit: cover;
 }
+
 
 
 
