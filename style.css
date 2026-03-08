@@ -194,6 +194,21 @@ footer ul {
   flex-wrap: wrap;
 }
 
+/* Hero layout fix */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.portrait {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero .container {
@@ -215,3 +230,4 @@ footer ul {
     display: inline-block;
   }
 }
+
