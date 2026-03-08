@@ -15,7 +15,6 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
 }
 
 /* ===== Fade-in Animation ===== */
@@ -45,7 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40;
+  gap: 40px;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
@@ -88,7 +87,7 @@ body {
 }
 .portrait {
   width: 240px;
-  heigh: auto;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
@@ -292,6 +291,64 @@ footer ul {
   border-radius: 10px;
   object-fit: cover;
 }
+/* ===== GLOBAL FIX ===== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* Removed display:flex — each section controls its own layout */
+}
+
+/* ===== HERO SECTION (FINAL CLEAN VERSION) ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background: linear-gradient(to right, #fffaf7, #f8ede9);
+}
+
+.hero-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro {
+  flex: 2;
+}
+
+.portrait {
+  flex: 1;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.portrait:hover {
+  transform: scale(1.05);
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .portrait {
+    width: 70%;
+  }
+}
+
 
 
 
