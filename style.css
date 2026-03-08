@@ -247,5 +247,22 @@ footer ul {
   border-radius: 10px;
   object-fit: cover;
 }
+/* Force hero layout into two columns */
+.hero-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Make sure the portrait stays on the right */
+.portrait {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 
