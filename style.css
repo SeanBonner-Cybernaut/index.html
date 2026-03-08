@@ -15,6 +15,7 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
 }
 
 /* ===== Fade-in Animation ===== */
@@ -40,11 +41,14 @@ body {
   background: linear-gradient(to right, #fffaf7, #f8ede9);
 }
 
-.hero .container {
+.hero-layout {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -79,10 +83,12 @@ body {
 }
 
 .portrait {
-  width: 220px;
+  width: 300px;
+  heigh: auto;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
+  object-fit: cover;
 }
 
 .portrait:hover {
@@ -258,6 +264,23 @@ footer ul {
 }
 
 /* Make sure the portrait stays on the right */
+.portrait {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/* HERO SECTION LAYOUT FIX */
+.hero-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Portrait styling */
 .portrait {
   width: 300px;
   height: auto;
