@@ -264,5 +264,7 @@ footer ul {
   border-radius: 10px;
   object-fit: cover;
 }
-
+body {
+  background: yellow !important;
+}
 
